@@ -36,7 +36,7 @@ public class ContaTerminal {
         
         // Solicita ao usuário que digite o número da sua agência
         System.out.println("Por favor, digite o número da sua Agência: ");
-        int numeroDaAgencia = scanner.nextInt();
+        String numeroDaAgencia = scanner.next();
         
         // Solicita ao usuário que digite seu saldo
         System.out.println("Por favor, digite seu saldo: ");
@@ -44,7 +44,7 @@ public class ContaTerminal {
 
         // Impressão de boas-vindas e resumo do projeto
         System.out.println("Olá " + nomeCliente + " " + sobrenomeCliente + ", obrigado por criar uma conta em nosso banco");
-        System.out.println("Sua agência e número da conta são: " + numeroDaAgencia + " " + numeroDaConta);
+        System.out.println("Seu número de conta e agência são: " + numeroDaConta + "" + numeroDaAgencia);
         System.out.println("Seu saldo disponível para saque: " + saldoDaConta);
     }
 }
